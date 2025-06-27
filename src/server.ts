@@ -27,7 +27,6 @@ async function start() {
 
   const taskRepository = new PrismaTaskRepository(prismaClient);
   const userGateway = new UserGateway();
-  const notificationGateway : NotificationService = new NotificationGateway();
 
   const taskUserDataService = new TaskUserDataService(userGateway)
   const taskEnrichmentService = new TaskEnrichmentService(taskUserDataService);
